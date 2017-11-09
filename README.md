@@ -6,6 +6,7 @@ The image is based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 
 ## Supported tags
 
+- `2.5` [(2.5/Dockerfile)](https://github.com/dockerized-php/ecs/blob/master/2.5/Dockerfile)
 - `latest` [(latest/Dockerfile)](https://github.com/dockerized-php/ecs/blob/master/latest/Dockerfile)
 
 ## How to use this image

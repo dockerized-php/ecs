@@ -1,7 +1,7 @@
 FROM alpine:3.6
 MAINTAINER Tommy Muehle <tommy.muehle@gmail.com>
 
-ARG VERSION="dev-master"
+ARG VERSION="2.5.*"
 
 ENV COMPOSER_HOME /composer
 ENV COMPOSER_ALLOW_SUPERUSER 1
@@ -9,7 +9,6 @@ ENV PATH /composer/vendor/bin:$PATH
 
 RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/community add \
     curl \
-    git \
     php7 \
     php7-json \
     php7-phar \
@@ -29,7 +28,7 @@ RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.or
   && php -r "unlink('/tmp/composer-setup.php');" \
   && php -r "unlink('/tmp/composer-setup.sig');" \
   && composer global require symplify/easy-coding-standard ${VERSION} \
-  && apk del curl git \
+  && apk del curl \
   && rm -rf /var/cache/apk/* /var/tmp/* /tmp/*
 
 VOLUME /app
