@@ -6,7 +6,7 @@ The image is based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 
 ## Supported tags
 
-- `2.5` [(2.5/Dockerfile)](https://github.com/dockerized-php/ecs/blob/master/2.5/Dockerfile)
+- `4.6` [(4.6/Dockerfile)](https://github.com/dockerized-php/ecs/blob/master/4.6/Dockerfile)
 - `latest` [(latest/Dockerfile)](https://github.com/dockerized-php/ecs/blob/master/latest/Dockerfile)
 
 ## How to use this image
@@ -22,7 +22,7 @@ docker pull dockerizedphp/ecs
 Or alternatively, pull a specific version:
 
 ```
-docker pull dockerizedphp/ecs:2.5
+docker pull dockerizedphp/ecs:4.6
 ```
 
 ### Usage
