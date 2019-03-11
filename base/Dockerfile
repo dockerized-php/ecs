@@ -29,7 +29,7 @@ RUN apk --update --progress --no-cache --repository http://dl-cdn.alpinelinux.or
   && rm -rf /var/cache/apk/* /var/tmp/* /tmp/*
 
 # Fix for "iconv(): Wrong charset, conversion from `UTF-8' to `ASCII//TRANSLIT//IGNORE'"
-RUN apk add gnu-libiconv --update-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
+RUN apk add gnu-libiconv --update-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ --allow-untrusted
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so php
 
 VOLUME /app
