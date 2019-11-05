@@ -1,6 +1,6 @@
 # Docker image for [ecs](https://github.com/Symplify/EasyCodingStandard)
 
-[![Build Status](https://travis-ci.org/dockerized-php/ecs.svg?branch=master)](https://travis-ci.org/dockerized-php/ecs)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 The image is based on [Alpine Linux](https://alpinelinux.org/) and built daily.
 
